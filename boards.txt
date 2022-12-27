@@ -25,19 +25,21 @@ menu.board_variant=Board Variant
 ###################
 
 
-kalincoP22.name=Kalinco Smart Watch p22
+kalincoP22.name=Kalinco p22
 
-kalincoP22.upload.tool=nRF52D6Fitness:openocd
+kalincoP22.name=DaFit Watch Bootloader 23
+
+kalincoP22.upload.tool=sandeepmistry:openocd
 kalincoP22.upload.target=nrf52
-kalincoP22.upload.maximum_size=409600
+kalincoP22.upload.maximum_size=376800
 
-kalincoP22.bootloader.tool=nRF52D6Fitness:openocd
+kalincoP22.bootloader.tool=sandeepmistry:openocd
 
 kalincoP22.build.mcu=cortex-m4
 kalincoP22.build.f_cpu=16000000
-kalincoP22.build.board=DSD6
+kalincoP22.build.board=DaPinout
 kalincoP22.build.core=nRF5
-kalincoP22.build.variant=DSD6
+kalincoP22.build.variant=DaPinout
 kalincoP22.build.variant_system_lib=
 kalincoP22.build.extra_flags=-DNRF52
 kalincoP22.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCONFIG_NFCT_PINS_AS_GPIOS -DUSE_LFRC -DNRF52 -DS132 -DNRF51_S132
@@ -46,10 +48,42 @@ kalincoP22.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
 kalincoP22.menu.softdevice.stockFW=Only Softdevice for Flashing via SWD
 kalincoP22.menu.softdevice.stockFW.flashVariantFile=sd.hex
 kalincoP22.menu.softdevice.stockFW.softdeviceversion=2.0.1
-kalincoP22.menu.softdevice.stockFW.softdevice=s132
+kalincoP22.menu.softdevice.stockFW.softdevice=S132
 kalincoP22.menu.softdevice.onlySoftDevice=Back To Stock Firmware
-kalincoP22.menu.softdevice.onlySoftDevice.flashVariantFile=flash.bin
+kalincoP22.menu.softdevice.onlySoftDevice.flashVariantFile=flashP8.bin
 kalincoP22.menu.softdevice.onlySoftDevice.softdeviceversion=2.0.1
-kalincoP22.menu.softdevice.onlySoftDevice.softdevice=s132
+kalincoP22.menu.softdevice.onlySoftDevice.softdevice=S132
 
 ###########################
+
+
+###################
+
+p8watch.name=DaFit Watch Bootloader 23
+
+p8watch.upload.tool=sandeepmistry:openocd
+p8watch.upload.target=nrf52
+p8watch.upload.maximum_size=376800
+
+p8watch.bootloader.tool=sandeepmistry:openocd
+
+p8watch.build.mcu=cortex-m4
+p8watch.build.f_cpu=16000000
+p8watch.build.board=DaPinout
+p8watch.build.core=nRF5
+p8watch.build.variant=DaPinout
+p8watch.build.variant_system_lib=
+p8watch.build.extra_flags=-DNRF52
+p8watch.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCONFIG_NFCT_PINS_AS_GPIOS -DUSE_LFRC -DNRF52 -DS132 -DNRF51_S132
+p8watch.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
+
+p8watch.menu.softdevice.stockFW=Only Softdevice for Flashing via SWD
+p8watch.menu.softdevice.stockFW.flashVariantFile=sd.hex
+p8watch.menu.softdevice.stockFW.softdeviceversion=2.0.1
+p8watch.menu.softdevice.stockFW.softdevice=S132
+p8watch.menu.softdevice.onlySoftDevice=Back To Stock Firmware
+p8watch.menu.softdevice.onlySoftDevice.flashVariantFile=flashP8.bin
+p8watch.menu.softdevice.onlySoftDevice.softdeviceversion=2.0.1
+p8watch.menu.softdevice.onlySoftDevice.softdevice=S132
+
+###################
