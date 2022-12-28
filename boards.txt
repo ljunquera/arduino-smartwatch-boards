@@ -27,8 +27,6 @@ menu.board_variant=Board Variant
 
 kalincoP22.name=Kalinco p22
 
-kalincoP22.name=DaFit Watch Bootloader 23
-
 kalincoP22.upload.tool=sandeepmistry:openocd
 kalincoP22.upload.target=nrf52
 kalincoP22.upload.maximum_size=376800
