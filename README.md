@@ -18,7 +18,7 @@ This core is edited for the D6 Fitness Tracker, it is original from here https:/
 
 
 ## JSON File
----
+```
 {
     "packages": [
         {
@@ -137,4 +137,4 @@ This core is edited for the D6 Fitness Tracker, it is original from here https:/
             }
     ]
 }
----
+```
