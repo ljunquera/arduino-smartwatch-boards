@@ -54,9 +54,6 @@ kalincoP22.menu.softdevice.onlySoftDevice.softdevice=S132
 
 ###########################
 
-
-###################
-
 p8watch.name=DaFit Watch Bootloader 23
 
 p8watch.upload.tool=sandeepmistry:openocd
@@ -83,5 +80,34 @@ p8watch.menu.softdevice.onlySoftDevice=Back To Stock Firmware
 p8watch.menu.softdevice.onlySoftDevice.flashVariantFile=flashP8.bin
 p8watch.menu.softdevice.onlySoftDevice.softdeviceversion=2.0.1
 p8watch.menu.softdevice.onlySoftDevice.softdevice=S132
+
+###################
+
+triink_epaper.name=DSD6 Tracker
+
+triink_epaper.upload.tool=sandeepmistry:openocd
+triink_epaper.upload.target=nrf52
+triink_epaper.upload.maximum_size=376800
+
+triink_epaper.bootloader.tool=sandeepmistry:openocd
+
+triink_epaper.build.mcu=cortex-m4
+triink_epaper.build.f_cpu=16000000
+triink_epaper.build.board=DSD6
+triink_epaper.build.core=nRF5
+triink_epaper.build.variant=DSD6
+triink_epaper.build.variant_system_lib=
+triink_epaper.build.extra_flags=-DNRF52
+triink_epaper.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCONFIG_NFCT_PINS_AS_GPIOS -DUSE_LFRC -DNRF52 -DS132 -DNRF51_S132
+triink_epaper.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
+
+triink_epaper.menu.softdevice.stockFW=Only Softdevice for Flashing via SWD
+triink_epaper.menu.softdevice.stockFW.flashVariantFile=sd.hex
+triink_epaper.menu.softdevice.stockFW.softdeviceversion=2.0.1
+triink_epaper.menu.softdevice.stockFW.softdevice=s132
+triink_epaper.menu.softdevice.onlySoftDevice=Back To Stock Firmware
+triink_epaper.menu.softdevice.onlySoftDevice.flashVariantFile=flashD6.bin
+triink_epaper.menu.softdevice.onlySoftDevice.softdeviceversion=2.0.1
+triink_epaper.menu.softdevice.onlySoftDevice.softdevice=s132
 
 ###################
