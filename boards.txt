@@ -35,9 +35,9 @@ kalincoP22.bootloader.tool=sandeepmistry:openocd
 
 kalincoP22.build.mcu=cortex-m4
 kalincoP22.build.f_cpu=16000000
-kalincoP22.build.board=DaPinout
+kalincoP22.build.board=kalincoP22
 kalincoP22.build.core=nRF5
-kalincoP22.build.variant=DaPinout
+kalincoP22.build.variant=kalincoP22
 kalincoP22.build.variant_system_lib=
 kalincoP22.build.extra_flags=-DNRF52
 kalincoP22.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCONFIG_NFCT_PINS_AS_GPIOS -DUSE_LFRC -DNRF52 -DS132 -DNRF51_S132

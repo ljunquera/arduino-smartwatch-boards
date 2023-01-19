@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 name=Various Smartwatch Boards
-version=0.6.5
+version=0.1.5
 
 # Compile variables
 # -----------------
