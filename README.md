@@ -16,3 +16,6 @@ This core is edited for the D6 Fitness Tracker, it is original from here https:/
  6. Select the DSD6 Tracker board from the Tools -> Board menu
  7. You will find the DFU update file in a folder like this on windows. ```C:\Users\USERNAME\AppData\Local\Temp\arduino_build_RANDOM\SKETCHNAME.ino.zip```
 
+### Dependencies
+
+Make sure to have Sandeep Mistry's boards platform installed https://github.com/sandeepmistry/arduino-nRF5#board-manager
